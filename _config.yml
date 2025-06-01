@@ -1,4 +1,4 @@
 title: Captivi
 description: Seamless Guest WiFi Access for UniFi & Square POS
 url: "http://sysadmininator.com/captivi-website/"  # Set this to your site URL or GitHub Pages URL
-baseurl: ""  # Leave blank for root deployment
+baseurl: "http://sysadmininator.com/captivi-website/"  # Leave blank for root deployment
