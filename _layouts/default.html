@@ -1,165 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captivi — Seamless Guest WiFi</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-<div class="canvas">
-
   <header>
-    <img src="{{ '/assets/images/captivi-logo.png' | relative_url }}" alt="Captivi logo" class="logo">
-    <h1>Captivi</h1>
-    <div class="tagline">WiFi, Simplified. Guests, Captivated.</div>
-    <p>Seamless guest onboarding for UniFi networks with integrated Square POS validation.<br>Connect. Verify. Browse.</p>
+    <img src="logo.png" alt="Captivi logo" />
+    <h1>WiFi, Simplified. Guests, Captivated.</h1>
+    <p>Seamless guest onboarding for UniFi networks with integrated Square POS validation.</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
   </header>
 
-  <div class="section">
-    <h2>Why Captivi?</h2>
-    <p>
-      Captivi streamlines guest WiFi access for hospitality, retail, and event spaces by connecting your UniFi network to real-time Square POS receipts. No more manual voucher codes, awkward conversations, or unreliable WiFi policies. Just easy, secure access when your guests need it most.
-    </p>
-    <div class="features">
-      <div class="feature">
-        <h3>Effortless Guest Access</h3>
-        <p>Authorize guests onto WiFi with proof of purchase using a simple Square receipt. Less clicks for your customers, no hassle for your employees.</p>
-      </div>
-      <div class="feature">
-        <h3>Secure & Flexible</h3>
-        <p>Keep your network safe. Only paying or validated guests connect, with customizable timeouts, access, and bandwidth rules.</p>
-      </div>
-      <div class="feature">
-        <h3>Designed for UniFi + Square</h3>
-        <p>Built specifically for Ubiquiti UniFi controllers and Square POS. No clunky workarounds or complex hardware required (in fact, no extra hardware at all!).</p>
-      </div>
-      <div class="feature">
-        <h3>Modern, Simple Portal</h3>
-        <p>Clean, branded captive portal on any device. No app required.</p>
-      </div>
-      <div class="feature">
-        <h3>Automated Compliance</h3>
-        <p>Log guest sessions for audit needs. Stay compliant while keeping your staff focused on service—not tech support.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section pricing">
-    <h2>Pricing</h2>
-    <div class="price-box">
-      <strong>Initial Implementation:</strong><br>
-      <span style="font-size:1.4em;">Starting at $250</span>
-      <p style="margin-top:0.3em;color:#507087;">
-        Includes installation, customization, and onboarding support.<br>
-        Complex or multi-site setups may incur additional fees.
-      </p>
-    </div>
-    <div class="price-box">
-      <strong>Maintenance & Support Plans:</strong><br>
-      <ul style="padding-left: 20px; margin: 8px 0; color:#263c53;">
-        <li><strong>Basic:</strong> $50/month (maintenance, up to 3 sites)</li>
-        <li><strong>Plus:</strong> $100/month (maintenance + additional site support)</li>
-        <li><strong>Premium:</strong> $150/month (everything above + UniFi network monitoring)</li>
-      </ul>
-      <p style="margin-top:0.3em;color:#507087;">Pick the plan that fits your needs. All plans include transparent remote updates, email support, and rapid response to outages.</p>
-    </div>
-    <small style="color:#909fa7;">*Volume discounts and custom packages available for multi-site venues.</small>
-  </div>
-
-  <div class="section">
-    <h2>Network Design & Optimization</h2>
-    <p>
-      Not sure if your UniFi network is set up for success? Captivi offers expert network design and consulting to make sure your staff, guest, and secure networks follow best practices for performance and security.<br>
-      <br>
-      <strong>Services include:</strong>
-      <ul>
-        <li>Custom WiFi design for reliable guest & staff connectivity.</li>
-        <li>Best-practice UniFi VLAN, SSID, and security setup.</li>
-        <li>Site surveys and performance tuning.</li>
-        <li>Ongoing advisory and upgrade planning.</li>
-      </ul>
-      <br>
-      <em>Contact us to discuss a network assessment or design package for your business!</em>
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>How It Works</h2>
-    <ol>
-      <li><strong>Guest completes a purchase. Staff issues a Square receipt.</strong></li>
-      <li><strong>Guest enters purchase code and order total into Captivi portal.</strong></li>
-      <li><strong>Captivi validates purchase</strong> in real time, and grants secure WiFi access for a set duration.</li>
-      <li><strong>Guest enjoys their browsing session, and staff is removed from the process. Worry free.</strong></li>
-    </ol>
-  </div>
-
-  <div class="section">
-    <h2>Frequently Asked Questions</h2>
+  <section id="features" class="features">
+    <h2>Features</h2>
     <ul>
-      <li>
-        <strong>Does Captivi work with any WiFi system?</strong><br>
-        Captivi is built specifically for Ubiquiti UniFi networks. We may already work with other platforms or could expand in the future—contact us if you have questions!
-      </li>
-      <li>
-        <strong>How does Square integration work?</strong><br>
-        Captivi verifies guest WiFi access by checking for a valid Square receipt code and order total. You control the rules—such as how long access is granted and bandwidth limits.
-      </li>
-      <li>
-        <strong>Is guest data safe and private?</strong><br>
-        Yes! Captivi only verifies purchase and device information for the purposes of connecting to Wi-Fi. We don’t store or sell guest browsing data.
-      </li>
-      <li>
-        <strong>Can I customize the captive portal?</strong><br>
-        Absolutely. We provide a basic template but you can (and should) add your own logo, colors, and messaging for a seamless guest experience across 1 or 100 (or more) locations.
-      </li>
-      <li>
-        <strong>What support is included?</strong><br>
-        All maintenance plans include transparent remote updates, email support, and rapid response to outages. Proactive and reactive network monitoring is included at our Premium level, for care that goes beyond the guest Wi-Fi experience. Phone and onsite support is available by request for an additional fee (varies based on request-ask us for a price list).
-      </li>
-      <li>
-        <strong>What if I need a network upgrade?</strong><br>
-        Our team can help design, upgrade, or troubleshoot your UniFi environment—see our Network Design Services above.
-      </li>
+      <li><strong>Effortless Guest Access:</strong> Authorize guests with proof of purchase using a Square receipt.</li>
+      <li><strong>Secure & Flexible:</strong> Permissions and usage policies tailored to your environment.</li>
+      <li><strong>Designed for UniFi + Square:</strong> Native integrations ensure quick and smooth setup.</li>
+      <li><strong>Modern, Simple Portal:</strong> Clean UI works on any device without app installs.</li>
+      <li><strong>Automated Compliance:</strong> Record-keeping and audit capabilities built in.</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>What Our Customers Say</h2>
-    <blockquote>
-      "Captivi made our café WiFi effortless. We just print the receipt, and guests connect. No more headaches, just happy customers!"
-      <br><br>
-      <span class="testimonial-author">– Casey, Café Owner</span>
-    </blockquote>
-    <blockquote>
-      "Our guest network used to be a mess—now it's secure, staff-only, or guest with purchase. Captivi handled the setup and it just works."
-      <br><br>
-      <span class="testimonial-author">– Linda, Salon Manager</span>
-    </blockquote>
-  </div>
+  <section id="about">
+    <h2>About Captivi</h2>
+    <p>Captivi streamlines guest WiFi access for hospitality, retail, and event spaces by connecting your UniFi network to real-time Square POS receipts. No more manual voucher codes. Just easy, secure access when your guests need it most.</p>
+  </section>
 
-  <div class="section">
-    <h2>See Captivi in Action</h2>
-    <div class="demo-box">
-      <img src="{{ '/assets/videos/captivi-trailer.mp4' | relative_url }}" alt="Captivi demo preview" />
-      <div class="demo-caption">
-        A quick walkthrough of Captivi's guest portal.<br>
-        (Full demo coming soon!)
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="tier">
+        <h3>Initial Setup</h3>
+        <p>Starting at $250<br/>One-time implementation and onboarding</p>
+      </div>
+      <div class="tier">
+        <h3>Basic</h3>
+        <p>$50/month<br/>Ongoing support and maintenance</p>
+        <a href="mailto:sales@captivi.info?subject=Captivi%20Basic%20Plan%20Inquiry&body=Full%20Name:%0ACompany:%0AContact%20Email:%0ASelected%20Tier:%20Basic%0AAdditional%20Notes:" class="btn">Get Started</a>
+      </div>
+      <div class="tier">
+        <h3>Plus</h3>
+        <p>$100/month<br/>Includes SLA and update monitoring</p>
+        <a href="mailto:sales@captivi.info?subject=Captivi%20Plus%20Plan%20Inquiry&body=Full%20Name:%0ACompany:%0AContact%20Email:%0ASelected%20Tier:%20Plus%0AAdditional%20Notes:" class="btn">Get Started</a>
+      </div>
+      <div class="tier">
+        <h3>Premium</h3>
+        <p>$150/month<br/>Includes redesign support and custom integrations</p>
+        <a href="mailto:sales@captivi.info?subject=Captivi%20Premium%20Plan%20Inquiry&body=Full%20Name:%0ACompany:%0AContact%20Email:%0ASelected%20Tier:%20Premium%0AAdditional%20Notes:" class="btn">Get Started</a>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="cta">
-    <h2>Contact Us</h2>
-    <p>Ready to transform your guest experience? Interested in partnering or want a demo?</p>
-    <button class="btn" onclick="window.location.href='mailto:sales@captivi.info';">Contact Us</button>
-    <p style="margin-top:14px;color:var(--text-light);">Or email <a href="mailto:info@captivi.com">sales@captivi.info</a></p>
-  </div>
-
-  <div class="footer">
-    &copy; {{ site.time | date: '%Y' }} Captivi. All rights reserved.
-  </div>
-
-</div>
+  <footer>
+    <p>&copy; 2025 Captivi. All rights reserved.</p>
+  </footer>
 </body>
 </html>
