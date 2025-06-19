@@ -1,113 +1,145 @@
 :root {
-  --primary: #1a6d9b;
-  --accent: #7a7a7a;
-  --bg: #f8fafc;
+  --brand-blue: #1a6d9b;
+  --brand-accent: #51ca7b;
+  --brand-bg: #f8fafc;
+  --box-bg: #fff;
+  --box-shadow: 0 2px 12px #e3eaf1;
+  --border-radius: 16px;
+  --text-main: #1d2733;
+  --text-light: #8597b1;
+  --header-shadow: 0 2px 8px #e1e7ef;
 }
-
 body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--brand-bg);
+  color: var(--text-main);
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--bg);
-  color: #333;
-  scroll-behavior: smooth;
 }
-
-header {
-  text-align: center;
-  padding: 2rem;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-header img {
+.logo {
   max-width: 180px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 1px 4px #dae8ef);
 }
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
+h1 {
+  font-size: 2.6em;
+  letter-spacing: 0.03em;
+  margin: 0 0 8px 0;
+  font-weight: 800;
 }
-
-nav a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: var(--primary);
-}
-
-section {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
 h2 {
-  text-align: center;
-  color: var(--primary);
+  color: var(--brand-blue);
+  margin-top: 0.8em;
 }
-
-.features ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features li {
-  margin: 1rem 0;
+.tagline {
+  font-size: 1.35em;
+  color: var(--brand-blue);
+  margin: 0 0 18px 0;
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
-
+.section {
+  max-width: 740px;
+  margin: 40px auto;
+  background: var(--box-bg);
+  border-radius: var(--border-radius);
+  padding: 32px 24px;
+  box-shadow: var(--box-shadow);
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 30px 0;
+}
+.feature {
+  flex: 1 1 220px;
+  min-width: 190px;
+  padding: 0 8px;
+  border-left: 3px solid var(--brand-accent);
+  background: #f6fdf9;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+.cta {
+  text-align: center;
+  margin: 38px 0;
+}
+.btn {
+  background: var(--brand-blue);
+  color: #fff;
+  padding: 15px 38px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.15em;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 10px #dae8ef;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  background: #15547a;
+  box-shadow: 0 4px 16px #bedcf2;
+}
 .pricing {
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 0 18px 0;
 }
-
-.tier {
-  flex: 1;
-  min-width: 250px;
-  background: white;
+.price-box {
+  background: #eaf6fd;
+  padding: 24px 34px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  min-width: 270px;
+  box-shadow: 0 1px 8px #d1e5f7;
+  border-left: 4px solid var(--brand-accent);
+}
+ul, ol {
+  margin: 0 0 0.8em 0.8em;
+  padding: 0 0 0 1.2em;
+}
+li {
+  margin-bottom: 0.6em;
+}
+.footer {
+  color: #8ea2b6;
+  text-align: center;
+  font-size: 1em;
+  padding: 24px 0 14px 0;
+  margin-top: auto;
+  background: var(--brand-bg);
+}
+blockquote {
+  border-left: 4px solid var(--brand-blue);
+  padding-left: 16px;
+  margin: 18px 0;
+  font-size: 1.16em;
+  background: #f5fafd;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  padding: 2rem;
+  color: #246699;
+}
+.testimonial-author { color: #263c53; font-weight: 600; }
+/* DEMO VIDEO STYLE */
+.demo-box {
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
 }
-
-.tier:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+.demo-box video, .demo-box img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #e3eaf1;
+  margin-bottom: 10px;
 }
-
-.tier h3 {
-  color: var(--primary);
+.demo-caption { color: var(--text-light); font-size: 1em; }
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .section { max-width: 98vw; }
 }
-
-.btn {
-  background: var(--primary);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: 1rem;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #155d85;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: #666;
+@media (max-width: 600px) {
+  .section, .pricing, .features { padding: 10px; }
+  h1 { font-size: 2em; }
+  .features { flex-direction: column; gap: 18px; }
+  .price-box { min-width: unset; }
 }
